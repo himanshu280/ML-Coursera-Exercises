@@ -1,5 +1,4 @@
 #Linear Regression and plotting using libraries
-
 from __future__ import division
 import pandas as pd 
 import numpy as np 
@@ -24,7 +23,6 @@ def scatterPlot(x,y,yp=None,savePng=False):
 		name = raw_input('Name Figure File: ')
 		plt.savefig(name+'.png')
 
-
 scatterPlot(x,y)
 
 #linear regression implementation using libraries
@@ -33,6 +31,3 @@ print 'Slope is ' + str(m)
 print 'Y intercept is ' + str(b)
 yp = np.polyval([m,b],x)
 scatterPlot(x,y,yp)
-
-
-
